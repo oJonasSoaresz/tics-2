@@ -340,16 +340,6 @@
             },
             {
                 "questionNumber": 13,
-                "question": "No Modelo OSI, qual camada é responsável pelo **Endereçamento Lógico (IP)** e pela **Escolha do Caminho (Roteamento)** dos dados entre redes distintas?",
-                "answerOptions": [
-                    { "text": "Camada de Transporte (Camada 4)", "rationale": "A Camada de Transporte é responsável pela comunicação fim a fim (portas e protocolos TCP/UDP), e não pelo roteamento entre redes.", "isCorrect": false },
-                    { "text": "Camada de Rede (Camada 3)", "rationale": "A Camada de Rede, com o protocolo IP, é a responsável pela determinação do caminho (roteamento) e pelo endereçamento lógico que permite que os dados cheguem ao destino correto, mesmo que em outra rede.", "isCorrect": true },
-                    { "text": "Camada Física (Camada 1)", "rationale": "A Camada Física lida com o meio de transmissão (cabos, sinais elétricos), e não com o endereçamento lógico ou roteamento.", "isCorrect": false },
-                    { "text": "Camada de Enlace (Camada 2)", "rationale": "A Camada de Enlace lida com o endereçamento físico (MAC) e o controle de acesso ao meio em uma rede local (LAN), e não com o roteamento entre redes.", "isCorrect": false }
-                ]
-            },
-            {
-                "questionNumber": 14,
                 "question": "Qual componente é considerado o 'cérebro' do computador e responsável por executar todas as instruções e cálculos necessários para o funcionamento da máquina?",
                 "answerOptions": [
                     { "text": "Placa-Mãe", "rationale": "A Placa-Mãe é a central de conexões, mas não executa os cálculos e instruções diretamente.", "isCorrect": false },
@@ -359,163 +349,13 @@
                 ]
             },
             {
-                "questionNumber": 15,
+                "questionNumber": 14,
                 "question": "A autenticação de **Duas Etapas** (ou Fator Duplo - 2FA) é uma medida de segurança importante porque:",
                 "answerOptions": [
                     { "text": "Garante que o usuário nunca mais precisará digitar sua senha após o primeiro acesso.", "rationale": "A 2FA exige a senha mais um segundo fator (código, biometria) a cada login em um novo dispositivo ou periodicamente, e não elimina a necessidade de senha.", "isCorrect": false },
                     { "text": "Substitui completamente a necessidade de uma senha, utilizando apenas a biometria.", "rationale": "A 2FA geralmente usa uma senha (primeiro fator) e um segundo fator (código, biometria), não eliminando a senha.", "isCorrect": false },
                     { "text": "Exige que o usuário prove sua identidade usando dois fatores diferentes (ex: algo que ele sabe - senha; e algo que ele tem - celular com código), dificultando o acesso de invasores, mesmo que a senha seja descoberta.", "rationale": "Ao exigir dois tipos de prova de identidade, a 2FA impede que um atacante acesse a conta, mesmo que ele tenha roubado a senha, tornando a segurança muito mais robusta.", "isCorrect": true },
                     { "text": "Criptografa todos os dados do disco rígido automaticamente após o login.", "rationale": "A criptografia do disco (como o BitLocker) é uma medida de segurança de dados em repouso, separada da autenticação de login.", "isCorrect": false }
-                ]
-            },
-            {
-                "questionNumber": 16,
-                "question": "Qual protocolo da Camada de Transporte (OSI 4) é considerado **orientado à conexão** e oferece mecanismos para garantir a entrega confiável, ordenada e com detecção de erros dos dados?",
-                "answerOptions": [
-                    { "text": "UDP (User Datagram Protocol)", "rationale": "O UDP é um protocolo não orientado à conexão (sem garantia de entrega) e é usado para aplicações onde a velocidade é mais importante que a precisão (ex: streaming de vídeo, jogos).", "isCorrect": false },
-                    { "text": "IP (Internet Protocol)", "rationale": "O IP opera na Camada de Rede (Camada 3) e lida com o endereçamento lógico, e não com a garantia de entrega na Camada de Transporte.", "isCorrect": false },
-                    { "text": "ARP (Address Resolution Protocol)", "rationale": "O ARP opera na Camada de Enlace (Camada 2) e traduz endereços IP para endereços MAC.", "isCorrect": false },
-                    { "text": "TCP (Transmission Control Protocol)", "rationale": "O TCP é orientado à conexão, estabelecendo um 'aperto de mão' (handshake) antes da transmissão para garantir que todos os pacotes cheguem ao destino na ordem correta, sendo confiável.", "isCorrect": true }
-                ]
-            },
-            {
-                "questionNumber": 17,
-                "question": "Qual a principal função de um **Driver** no sistema operacional?",
-                "answerOptions": [
-                    { "text": "Atuar como um software antivírus para proteger o sistema.", "rationale": "O driver é um software de sistema que permite o uso de hardware, mas sua função principal não é a proteção antivírus.", "isCorrect": false },
-                    { "text": "Realizar a desfragmentação e otimização de disco.", "rationale": "A desfragmentação e otimização de disco são funções de um software utilitário, e não de um driver.", "isCorrect": false },
-                    { "text": "Traduzir os comandos do Sistema Operacional para uma linguagem que o hardware específico (ex: impressora, placa de vídeo) entenda, permitindo seu funcionamento.", "rationale": "O driver é a interface de software entre o sistema operacional e um dispositivo de hardware, sendo essencial para que o SO possa se comunicar e controlar o dispositivo.", "isCorrect": true },
-                    { "text": "Armazenar permanentemente os dados e programas do usuário.", "rationale": "O armazenamento permanente é a função do HD/SSD.", "isCorrect": false }
-                ]
-            },
-            {
-                "questionNumber": 18,
-                "question": "O que caracteriza a **Memória Cache** (não a RAM) no contexto de desempenho do Processador?",
-                "answerOptions": [
-                    { "text": "É uma memória de armazenamento permanente para o Sistema Operacional.", "rationale": "A Cache é volátil e de uso temporário, não é usada para armazenamento permanente.", "isCorrect": false },
-                    { "text": "É um tipo de memória lenta, mas de grande capacidade, utilizada para cópia de segurança.", "rationale": "A Cache é a memória mais rápida do computador, com capacidade muito pequena, localizada dentro ou muito próxima do Processador.", "isCorrect": false },
-                    { "text": "É uma memória extremamente rápida, mas de pequena capacidade, que armazena dados e instruções mais usados, para que o Processador não precise acessá-los na RAM, acelerando o processamento.", "rationale": "A Cache atua como um 'buffer' de alta velocidade entre a CPU e a RAM, armazenando dados que são acessados frequentemente para reduzir o tempo de espera do Processador.", "isCorrect": true },
-                    { "text": "É uma memória de leitura e escrita lenta utilizada apenas para testes de diagnóstico no hardware.", "rationale": "A Cache é de leitura e escrita extremamente rápida e é usada na operação normal do sistema.", "isCorrect": false }
-                ]
-            },
-            {
-                "questionNumber": 19,
-                "question": "Na resolução de problemas de software (*troubleshooting*), qual é a primeira e mais simples ação que um técnico deve sugerir ao usuário?",
-                "answerOptions": [
-                    { "text": "Reinstalar o programa que está apresentando o problema.", "rationale": "A reinstalação é uma solução mais complexa e que deve ser considerada após tentar soluções mais simples.", "isCorrect": false },
-                    { "text": "Executar o diagnóstico de memória (RAM) do sistema.", "rationale": "O diagnóstico de RAM é para problemas de hardware ou falhas de sistema mais profundas, não é o primeiro passo para problemas de software.", "isCorrect": false },
-                    { "text": "Verificar se há espaço suficiente no disco rígido.", "rationale": "Verificar o espaço em disco é um bom passo, mas não é a ação inicial mais comum para resolver travamentos ou comportamentos anômalos.", "isCorrect": false },
-                    { "text": "Reiniciar o computador (reboot).", "rationale": "A reinicialização é o passo mais simples e eficaz, pois encerra processos travados, limpa a memória e resolve a maioria dos erros e travamentos temporários de software.", "isCorrect": true }
-                ]
-            },
-            {
-                "questionNumber": 20,
-                "question": "Qual das seguintes topologias de rede é caracterizada por ter todos os dispositivos conectados a um ponto central (Switch ou Hub), sendo a mais comum em LANs modernas?",
-                "answerOptions": [
-                    { "text": "Topologia em Anel (Ring)", "rationale": "Na topologia em anel, os dispositivos são conectados em um loop fechado, onde os dados circulam em uma única direção.", "isCorrect": false },
-                    { "text": "Topologia em Barramento (Bus)", "rationale": "Na topologia em barramento, todos os dispositivos se conectam a um cabo principal, sem um ponto central.", "isCorrect": false },
-                    { "text": "Topologia em Malha (Mesh)", "rationale": "Na topologia em malha, cada dispositivo se conecta a todos os outros (total) ou a múltiplos outros (parcial), sem depender de um único ponto central.", "isCorrect": false },
-                    { "text": "Topologia em Estrela (Star)", "rationale": "A Topologia em Estrela utiliza um dispositivo central (Switch ou Hub) ao qual todos os demais dispositivos da rede estão conectados, sendo a mais usada atualmente.", "isCorrect": true }
-                ]
-            },
-            {
-                "questionNumber": 21,
-                "question": "No Modelo OSI, a **Camada de Apresentação (Camada 6)** tem como principal responsabilidade:",
-                "answerOptions": [
-                    { "text": "Fornecer uma interface para o usuário final acessar a rede.", "rationale": "Essa é a função da Camada de Aplicação (Camada 7).", "isCorrect": false },
-                    { "text": "Gerenciar o diálogo e a sincronização entre aplicações em hosts distintos.", "rationale": "Gerenciar sessões e sincronização é a função da Camada de Sessão (Camada 5).", "isCorrect": false },
-                    { "text": "Garantir a entrega confiável e ordenada dos dados (TCP/UDP).", "rationale": "Garantir a entrega é a função da Camada de Transporte (Camada 4).", "isCorrect": false },
-                    { "text": "Lidar com a sintaxe e a semântica dos dados, incluindo formatação, criptografia/descriptografia e compactação/descompactação dos dados.", "rationale": "A Camada de Apresentação garante que a informação trocada seja compreendida pelo sistema receptor, traduzindo formatos se necessário e lidando com a formatação e codificação dos dados.", "isCorrect": true }
-                ]
-            },
-            {
-                "questionNumber": 22,
-                "question": "Qual é o principal critério para classificar uma rede como **WAN** (Wide Area Network)?",
-                "answerOptions": [
-                    { "text": "Ser uma rede sem fio (Wireless).", "rationale": "O termo 'WAN' refere-se à abrangência geográfica, não ao meio de transmissão (que pode ser com ou sem fio).", "isCorrect": false },
-                    { "text": "Utilizar exclusivamente cabos de fibra óptica de alta velocidade.", "rationale": "O meio de transmissão é um detalhe técnico, enquanto o critério principal é a abrangência.", "isCorrect": false },
-                    { "text": "Ser restrita a um único prédio ou campus universitário (pequena abrangência).", "rationale": "Uma rede restrita a um único local é uma LAN (Local Area Network).", "isCorrect": false },
-                    { "text": "Possuir uma ampla abrangência geográfica, interconectando redes locais (LANs) em diferentes cidades, estados ou países, como a própria Internet.", "rationale": "WAN (Rede de Longa Distância) é projetada para cobrir grandes áreas geográficas, sendo o oposto da LAN.", "isCorrect": true }
-                ]
-            },
-            {
-                "questionNumber": 23,
-                "question": "Qual dos seguintes softwares é um exemplo de **Sistema Operacional (SO)**?",
-                "answerOptions": [
-                    { "text": "Microsoft Word", "rationale": "O Microsoft Word é um Software de Aplicação (processador de texto), que depende do SO para funcionar.", "isCorrect": false },
-                    { "text": "Google Chrome", "rationale": "O Google Chrome é um Software de Aplicação (navegador web), que depende do SO para funcionar.", "isCorrect": false },
-                    { "text": "Windows 11 ou Linux Ubuntu", "rationale": "Windows e Linux são exemplos de Sistemas Operacionais, softwares essenciais que gerenciam o hardware e fornecem a plataforma para todos os outros programas.", "isCorrect": true },
-                    { "text": "NVIDIA Graphics Driver", "rationale": "O Driver de Vídeo é um Software de Sistema que permite a comunicação com a Placa de Vídeo, mas não é o Sistema Operacional completo.", "isCorrect": false }
-                ]
-            },
-            {
-                "questionNumber": 24,
-                "question": "O que a sigla **BIOS/UEFI** representa e qual é a sua função principal?",
-                "answerOptions": [
-                    { "text": "Sistema Operacional Avançado; gerencia a interface gráfica e o multitarefa.", "rationale": "BIOS/UEFI é firmware, não o Sistema Operacional. O SO gerencia a interface gráfica e o multitarefa.", "isCorrect": false },
-                    { "text": "Software de Backup e Recuperação de Dados; usado para fazer cópias de segurança de forma rápida.", "rationale": "BIOS/UEFI é um firmware de inicialização. Programas de backup são softwares utilitários.", "isCorrect": false },
-                    { "text": "Firmware de Inicialização; realiza o teste de hardware (POST) e carrega o Sistema Operacional do disco rígido.", "rationale": "O BIOS (Basic Input/Output System) ou seu sucessor UEFI (Unified Extensible Firmware Interface) são softwares de baixo nível que controlam a inicialização do computador antes do carregamento do Sistema Operacional.", "isCorrect": true },
-                    { "text": "Memória de Armazenamento Temporário; armazena dados voláteis de acesso rápido.", "rationale": "A memória de armazenamento temporário volátil é a RAM.", "isCorrect": false }
-                ]
-            },
-            {
-                "questionNumber": 25,
-                "question": "O que significa o 'S' (Secure) em **HTTPS**?",
-                "answerOptions": [
-                    { "text": "Significa que o site é verificado e seguro contra Malwares.", "rationale": "Embora a segurança aumente, o 'S' refere-se à criptografia da conexão, e não a uma garantia de que o site está livre de Malwares.", "isCorrect": false },
-                    { "text": "Significa que a comunicação entre o navegador e o servidor é criptografada (SSL/TLS), protegendo os dados de interceptação por terceiros.", "rationale": "O HTTPS (Hypertext Transfer Protocol Secure) utiliza os protocolos SSL/TLS para criptografar os dados, garantindo a confidencialidade e a integridade da comunicação.", "isCorrect": true },
-                    { "text": "Significa que o servidor web está localizado em um datacenter seguro.", "rationale": "O protocolo não indica a segurança física do servidor, mas sim a segurança da transmissão de dados.", "isCorrect": false },
-                    { "text": "Significa que o site só pode ser acessado após a autenticação de dois fatores.", "rationale": "A 2FA é um mecanismo de login do usuário, enquanto o HTTPS é um protocolo de comunicação para todos os usuários.", "isCorrect": false }
-                ]
-            },
-            {
-                "questionNumber": 26,
-                "question": "Qual a principal diferença entre um endereço **IP** e um endereço **MAC**?",
-                "answerOptions": [
-                    { "text": "O endereço IP é físico e imutável, enquanto o MAC é lógico e pode ser alterado.", "rationale": "Essa afirmação está incorreta: o MAC é o endereço físico (de hardware) e o IP é o endereço lógico (de software), que pode ser alterado.", "isCorrect": false },
-                    { "text": "O endereço MAC é usado para comunicação entre redes distintas, enquanto o IP é usado apenas dentro de uma LAN.", "rationale": "O IP é crucial para comunicação entre redes (roteamento), enquanto o MAC é usado para comunicação na rede local (LAN).", "isCorrect": false },
-                    { "text": "O endereço IP é lógico, usado na Camada de Rede (roteamento), e é atribuído por software, enquanto o MAC é físico, usado na Camada de Enlace (LAN), e é gravado de fábrica na placa de rede.", "rationale": "O endereço MAC (Media Access Control) é um identificador físico único do hardware, enquanto o IP (Internet Protocol) é um identificador lógico necessário para o tráfego de dados na Internet.", "isCorrect": true },
-                    { "text": "Ambos são endereços lógicos, mas o IP é usado por computadores e o MAC é usado apenas por roteadores.", "rationale": "O MAC é um endereço físico. Ambos os endereços são usados por computadores e a maioria dos dispositivos de rede.", "isCorrect": false }
-                ]
-            },
-            {
-                "questionNumber": 27,
-                "question": "O que o conceito de **Computação em Nuvem (Cloud Computing)** descreve?",
-                "answerOptions": [
-                    { "text": "A utilização de hardware antigo, que não está mais em uso, para processar tarefas em segundo plano.", "rationale": "A Computação em Nuvem não está relacionada ao uso de hardware antigo, mas sim à infraestrutura moderna e escalável.", "isCorrect": false },
-                    { "text": "O armazenamento de dados unicamente no disco rígido do computador local.", "rationale": "A Nuvem implica que os serviços e o armazenamento estão disponíveis remotamente na Internet, e não apenas no dispositivo local.", "isCorrect": false },
-                    { "text": "A entrega de serviços de computação (servidores, armazenamento, bancos de dados, software) sob demanda pela Internet, em regime de pagamento pelo uso.", "rationale": "A Computação em Nuvem permite o acesso flexível e escalável a recursos de TI pela web, eliminando a necessidade de manter uma infraestrutura física local.", "isCorrect": true },
-                    { "text": "A criação de redes locais sem fio que cobrem uma área geográfica muito grande.", "rationale": "Essa descrição se refere a redes de longa distância (WAN), e não ao modelo de fornecimento de serviços de TI.", "isCorrect": false }
-                ]
-            },
-            {
-                "questionNumber": 28,
-                "question": "Qual tipo de rede possui a **menor abrangência geográfica**, sendo tipicamente utilizada para conectar dispositivos em um único prédio ou campus universitário?",
-                "answerOptions": [
-                    { "text": "PAN (Personal Area Network)", "rationale": "A PAN é ainda menor que a LAN, cobrindo a área pessoal (ex: Bluetooth entre celular e fone), e não um prédio inteiro.", "isCorrect": false },
-                    { "text": "MAN (Metropolitan Area Network)", "rationale": "A MAN abrange uma área metropolitana ou cidade, sendo maior que a rede local de um prédio.", "isCorrect": false },
-                    { "text": "WAN (Wide Area Network)", "rationale": "A WAN interliga continentes, países ou cidades, sendo a de maior abrangência geográfica.", "isCorrect": false },
-                    { "text": "LAN (Local Area Network)", "rationale": "A LAN é a rede local que cobre uma área geograficamente limitada e definida, como um prédio, residência ou campus universitário. (Conceito da Questão 1 da prova de Comunicação de Dados)", "isCorrect": true }
-                ]
-            },
-            {
-                "questionNumber": 29,
-                "question": "Qual das seguintes Malwares é uma ameaça primária para a **ética e sustentabilidade** no ciclo de vida de um produto eletrônico?",
-                "answerOptions": [
-                    { "text": "Adware, pois polui o ambiente virtual com propagandas.", "rationale": "O Adware é uma ameaça digital que incomoda o usuário, mas não impacta diretamente a sustentabilidade e a ética no ciclo de vida físico do produto.", "isCorrect": false },
-                    { "text": "Vírus, pois sua remoção exige o descarte prematuro do equipamento.", "rationale": "A remoção de vírus é geralmente feita com software, e não exige o descarte do equipamento (que é um problema de lixo eletrônico).", "isCorrect": false },
-                    { "text": "O 'Oceano Negro' (Dark Web), devido à venda de componentes ilegais.", "rationale": "O Oceano Negro é um ambiente da internet, e não um tipo de Malware ou uma ameaça direta à sustentabilidade do produto físico.", "isCorrect": false },
-                    { "text": "A **Obsolescência Programada**, que consiste em projetar produtos para terem uma vida útil curta, forçando o consumidor a descartar e comprar um novo, gerando lixo eletrônico (e-waste).", "rationale": "A Obsolescência Programada é uma prática de mercado que impacta negativamente a sustentabilidade e levanta questões éticas sobre o ciclo de vida dos produtos e a geração excessiva de lixo eletrônico.", "isCorrect": true }
-                ]
-            },
-            {
-                "questionNumber": 30,
-                "question": "Qual camada do Modelo OSI é responsável por lidar com o **meio de transmissão físico** (cabos, conectores) e converter os dados em sinais elétricos ou ópticos (bits) para a sua transferência?",
-                "answerOptions": [
-                    { "text": "Camada de Aplicação (Camada 7)", "rationale": "A Camada de Aplicação é a mais alta, lidando com os softwares de rede do usuário final.", "isCorrect": false },
-                    { "text": "Camada de Transporte (Camada 4)", "rationale": "A Camada de Transporte lida com a comunicação fim a fim (TCP/UDP), não com o meio físico.", "isCorrect": false },
-                    { "text": "Camada de Rede (Camada 3)", "rationale": "A Camada de Rede lida com o endereçamento lógico (IP) e o roteamento.", "isCorrect": false },
-                    { "text": "Camada Física (Camada 1)", "rationale": "A Camada Física é a mais baixa, diretamente responsável por transmitir os bits pelo meio físico (cabos de cobre, fibra óptica ou ar), definindo as especificações elétricas e mecânicas. (Conceito da Questão 10 da prova de Comunicação de Dados)", "isCorrect": true }
                 ]
             }
         ];
@@ -637,4 +477,5 @@
 </script>
 
 </body>
+
 </html>
