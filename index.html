@@ -539,7 +539,6 @@ body.standalone #app{position:fixed!important;top:0;right:0;bottom:0;left:0;max-
       <div class="balao"><b>Dica do dia:</b> <span id="dicaTexto"></span></div>
     </div>
     <div class="linha-feed"><span class="secao-titulo" style="margin:0">Novidades da comunidade 🌿</span></div>
-    <div class="filtros" id="filtroFeed"></div>
     <div id="feed"></div>
   </div>
 </section>
@@ -835,9 +834,94 @@ const PLANTAS = [
   regar:['Regue quando as raízes ficarem prateadas.','Deixe escorrer bem toda a água.'],
   cuidar:['Luz clarinha, mas sem sol direto.','Depois da florada, corte a haste seca.'],
   vaso:['Troque a cada 2 anos ou quando o substrato se desmanchar.'],
-  alerta:'Folhas murchas e enrugadas podem ser falta OU excesso de água. Olhe as raízes!'}
+  alerta:'Folhas murchas e enrugadas podem ser falta OU excesso de água. Olhe as raízes!'},
+ {id:'jiboia',wiki:'Epipremnum_aureum',nome:'Jiboia',cientifico:'Epipremnum aureum',emoji:'🍃',cor:'#E1F3E7',categoria:'Folhagens',nivel:'facil',luz:'Meia-sombra',agua:'2x por semana',porte:'Trepadeira',
+  sobre:'Uma das plantas mais fáceis do mundo! Cresce pendente ou subindo, e deixa qualquer cantinho mais verde.',
+  plantar:['Use um vaso com furinhos e terra fofinha misturada com um pouco de areia.','Dá para fazer mudas: corte um galho com 2 ou 3 folhas e coloque num copo com água.','Quando as raízes tiverem uns 5 cm, plante na terra.'],
+  regar:['Regue quando os primeiros 2 dedos de terra estiverem secos.','Ela avisa quando tem sede: as folhas ficam caidinhas. Regou, elas levantam!','Não deixe água parada no pratinho.'],
+  cuidar:['Gosta de claridade, mas sem sol forte direto nas folhas.','Limpe as folhas com um pano úmido de vez em quando.','Corte as pontas para ela ficar mais cheinha.'],
+  vaso:['Troque a cada 1 ou 2 anos, ou quando as raízes saírem pelo fundo.','Aproveite a troca para fazer mudinhas e presentear alguém 💚'],
+  alerta:'Ela é tóxica para pets e crianças pequenas se for mastigada. Deixe num lugar alto!'},
+ {id:'espada-sao-jorge',wiki:'Dracaena_trifasciata',nome:'Espada-de-São-Jorge',cientifico:'Dracaena trifasciata',emoji:'🪴',cor:'#E8F2E0',categoria:'Folhagens',nivel:'facil',luz:'Qualquer luz',agua:'A cada 15 dias',porte:'Médio',
+  sobre:'Super resistente e quase não pede água. Ótima para quem viaja muito ou esquece de regar.',
+  plantar:['Use terra bem drenada, com areia ou terra para cactos.','Plante sem enterrar demais a base das folhas.'],
+  regar:['Regue pouco: só quando a terra estiver totalmente seca.','No frio, uma vez por mês já basta.'],
+  cuidar:['Vive bem na sombra, mas cresce mais rápido com claridade.','Tire a poeira das folhas com um pano úmido.'],
+  vaso:['Troque quando as raízes começarem a deformar ou rachar o vaso.','Você pode dividir a touceira e fazer novas plantas.'],
+  alerta:'Base mole ou amarelada é sinal de água demais. Deixe secar bem!'},
+ {id:'zamioculca',wiki:'Zamioculcas',nome:'Zamioculca',cientifico:'Zamioculcas zamiifolia',emoji:'🌿',cor:'#DFF0E2',categoria:'Folhagens',nivel:'facil',luz:'Sombra',agua:'A cada 15 dias',porte:'Médio',
+  sobre:'Folhas brilhantes e muito resistente. Aguenta ambientes com pouca luz, como escritórios.',
+  plantar:['Use terra fofinha com boa drenagem.','Deixe as batatinhas da raiz bem perto da superfície.'],
+  regar:['Ela guarda água nas raízes, então regue pouco.','Espere a terra secar totalmente antes de regar de novo.'],
+  cuidar:['Evite sol direto, que queima as folhas.','Folhas novas nascem enroladinhas, é normal!'],
+  vaso:['Troque a cada 2 ou 3 anos.','Use um vaso só um pouquinho maior que o anterior.'],
+  alerta:'É tóxica se ingerida. Mantenha longe de pets e crianças.'},
+ {id:'costela-de-adao',wiki:'Monstera_deliciosa',nome:'Costela-de-adão',cientifico:'Monstera deliciosa',emoji:'🌱',cor:'#E3F4E6',categoria:'Folhagens',nivel:'medio',luz:'Luz indireta',agua:'1x por semana',porte:'Grande',
+  sobre:'As famosas folhas recortadas! Fica linda em sala de estar e cresce bastante com carinho.',
+  plantar:['Use vaso grande e terra rica com fibra de coco.','Coloque uma estaca de musgo ou bambu para ela se apoiar.'],
+  regar:['Regue quando a metade de cima da terra estiver seca.','Borrife água nas folhas nos dias muito secos.'],
+  cuidar:['Precisa de bastante claridade, mas sem sol direto.','Os furinhos nas folhas aparecem quando ela recebe boa luz.','Limpe as folhas grandes com pano úmido.'],
+  vaso:['Troque a cada 2 anos, quando as raízes aéreas ficarem muito compridas.'],
+  alerta:'Folhas sem recortes? Ela está pedindo mais luz!'},
+ {id:'lirio-da-paz',wiki:'Spathiphyllum',nome:'Lírio-da-paz',cientifico:'Spathiphyllum wallisii',emoji:'🌼',cor:'#EEF6F0',categoria:'Folhagens',nivel:'facil',luz:'Meia-sombra',agua:'2x por semana',porte:'Médio',
+  sobre:'Dá flores brancas lindas e avisa direitinho quando está com sede.',
+  plantar:['Use terra úmida e rica em matéria orgânica.','Vaso com furinhos é essencial.'],
+  regar:['Gosta de terra sempre levemente úmida.','Quando as folhas murcharem de repente, regue: em algumas horas ela se recupera!'],
+  cuidar:['Fique longe do sol direto.','Corte as flores que ficarem verdes ou secas.'],
+  vaso:['Troque a cada 1 ou 2 anos, na primavera.'],
+  alerta:'Pontas marrons nas folhas costumam ser ar seco ou água com muito cloro. Deixe a água descansar antes de regar.'},
+ {id:'suculenta',wiki:'Echeveria',nome:'Suculenta Echeveria',cientifico:'Echeveria elegans',emoji:'🪷',cor:'#E8F3EE',categoria:'Suculentas',nivel:'facil',luz:'Sol pleno',agua:'1x por semana',porte:'Pequeno',
+  sobre:'Parece uma rosinha de pedra! Pequena, charmosa e econômica com água.',
+  plantar:['Use terra para cactos e suculentas, ou terra com bastante areia.','Uma folha caída pode virar planta nova: deixe secar 2 dias e coloque deitada na terra.'],
+  regar:['Regue só quando a terra estiver completamente seca.','Molhe a terra, não as folhinhas.'],
+  cuidar:['Precisa de pelo menos 4 horas de sol.','Se ela "esticar" para cima, está pedindo mais luz.'],
+  vaso:['Troque quando os filhotinhos lotarem o vaso.'],
+  alerta:'Folhas moles e transparentes = água demais. Folhas murchas e enrugadas = sede.'},
+ {id:'cacto',wiki:'Mammillaria',nome:'Cacto',cientifico:'Mammillaria sp.',emoji:'🌵',cor:'#EFF5E6',categoria:'Suculentas',nivel:'facil',luz:'Sol pleno',agua:'A cada 15 dias',porte:'Pequeno',
+  sobre:'O campeão da resistência! Perfeito para janelas ensolaradas.',
+  plantar:['Use luvas grossas ou um papel dobrado para segurar.','Terra para cactos com pedrinhas no fundo do vaso.'],
+  regar:['Regue pouco e espere a terra secar totalmente.','No inverno, quase não precisa de água.'],
+  cuidar:['Quanto mais sol, melhor.','Com bastante luz, alguns dão flores coloridas!'],
+  vaso:['Troque a cada 2 ou 3 anos.','Espere uma semana para regar depois da troca.'],
+  alerta:'Base escura e mole é apodrecimento por excesso de água.'},
+ {id:'alecrim',wiki:'Rosemary',nome:'Alecrim',cientifico:'Salvia rosmarinus',emoji:'🌲',cor:'#E6F0E8',categoria:'Temperos',nivel:'facil',luz:'Sol pleno',agua:'2x por semana',porte:'Médio',
+  sobre:'Perfumado e resistente. Combina com batatas, carnes e chás!',
+  plantar:['Mais fácil por galhinho: corte um raminho de 10 cm e plante em terra com areia.','Use vaso com ótima drenagem.'],
+  regar:['Prefere terra mais sequinha.','Regue quando a terra estiver seca por cima.'],
+  cuidar:['Precisa de muito sol.','Colha as pontinhas sempre, assim ele fica mais cheio.'],
+  vaso:['Troque quando ele ficar maior que o vaso.'],
+  alerta:'Folhas escurecendo de baixo para cima costumam ser excesso de água.'},
+ {id:'salsinha',wiki:'Parsley',nome:'Salsinha',cientifico:'Petroselinum crispum',emoji:'🌿',cor:'#E2F4E4',categoria:'Temperos',nivel:'facil',luz:'Meia-sombra',agua:'A cada 2 dias',porte:'Pequeno',
+  sobre:'A parceira da cebolinha! Fácil de cuidar e sempre útil na cozinha.',
+  plantar:['Deixe as sementes de molho em água por uma noite, assim elas brotam mais rápido.','Semeie direto no vaso, cobrindo com pouca terra.','Ela demora um pouquinho para brotar (até 3 semanas). Tenha paciência!'],
+  regar:['Mantenha a terra úmida, sem encharcar.'],
+  cuidar:['Gosta de sol da manhã.','Colha os talos de fora, deixando o miolo crescer.'],
+  vaso:['Não costuma precisar de troca, renove a plantação a cada ano.'],
+  alerta:'Folhas amareladas podem ser falta de adubo. Use húmus de minhoca.'},
+ {id:'coentro',wiki:'Coriander',nome:'Coentro',cientifico:'Coriandrum sativum',emoji:'🌿',cor:'#E4F5E1',categoria:'Temperos',nivel:'medio',luz:'Sol pleno',agua:'Todo dia',porte:'Pequeno',
+  sobre:'Queridinho da culinária nordestina! Cresce rápido, mas gosta de atenção.',
+  plantar:['Amasse levemente as sementes antes de plantar.','Semeie direto no vaso definitivo: ele não gosta de ser transplantado.'],
+  regar:['Regue um pouquinho todos os dias.','Terra úmida, nunca encharcada.'],
+  cuidar:['Precisa de sol, mas proteja do calor muito forte da tarde.','Colha antes de florescer, que é quando o sabor está melhor.'],
+  vaso:['Não precisa trocar. Plante de novo a cada 2 meses para ter sempre.'],
+  alerta:'Se ele florescer muito cedo, está com calor demais.'},
+ {id:'pimenta',wiki:'Capsicum_frutescens',nome:'Pimenta',cientifico:'Capsicum frutescens',emoji:'🌶️',cor:'#FFE9E3',categoria:'Frutos',nivel:'medio',luz:'Sol pleno',agua:'A cada 2 dias',porte:'Médio',
+  sobre:'Colorida e produtiva! Um pé de pimenta enfeita e tempera.',
+  plantar:['Semeie em copinhos e passe para o vaso quando tiver 4 folhas.','Use vaso de pelo menos 5 litros.'],
+  regar:['Regue quando a terra estiver secando por cima.','Evite molhar as flores.'],
+  cuidar:['Precisa de 6 horas de sol.','Adube a cada mês na época das flores.'],
+  vaso:['Troque se ela ficar apertada, de preferência antes de florescer.'],
+  alerta:'Lave as mãos depois de colher, e não coce os olhos! 🔥'},
+ {id:'lavanda',wiki:'Lavandula_angustifolia',nome:'Lavanda',cientifico:'Lavandula angustifolia',emoji:'💜',cor:'#F1EAFB',categoria:'Ornamentais',nivel:'dificil',luz:'Sol pleno',agua:'1x por semana',porte:'Médio',
+  sobre:'Perfume que acalma e flores lilás lindas. Pede um pouco mais de capricho.',
+  plantar:['Compre muda pronta, é bem mais fácil.','Use terra com areia e boa drenagem.'],
+  regar:['Regue pouco. Ela prefere terra seca a terra molhada.'],
+  cuidar:['Precisa de muito sol e ventilação.','Corte as flores secas para estimular novas.'],
+  vaso:['Troque a cada 2 anos, com cuidado com as raízes.'],
+  alerta:'Ela não gosta de umidade. Em lugares muito úmidos, coloque o vaso em local bem arejado.'}
+
 ];
-const CATEGORIAS = ['Todas','Temperos','Hortaliças','Frutos','Suculentas','Ornamentais','Fáceis'];
+const CATEGORIAS = ['Todas','Fáceis','Temperos','Hortaliças','Frutos','Folhagens','Suculentas','Ornamentais'];
 const DICAS = ['Regar de manhã cedinho ajuda a planta a aproveitar melhor a água. 💧','Coloque o dedo na terra antes de regar: se estiver úmida, espere mais um pouquinho!','Cascas de ovo trituradas viram um ótimo adubo natural. 🥚','Converse com suas plantas! Mal não faz, e você presta mais atenção nelas. 💚','Gire o vaso de vez em quando, assim a planta cresce reta pro sol. ☀️'];
 
 /* ================= ESTADO ================= */
@@ -1700,20 +1784,20 @@ async function abrirPerfilUsuario(uid){
   const comeca=y=>{if(sc.scrollTop<=0&&!carregando){y0=y;dist=0}};
   const move=y=>{
     if(y0===null)return;
-    dist=Math.max(0,(y-y0)*.5);
+    dist=Math.max(0,(y-y0-25)*.38);
     if(dist>0&&sc.scrollTop<=0){
-      const d=Math.min(dist,90);
+      const d=Math.min(dist,110);
       ind.style.transition='none';ind.style.height=d+'px';ind.style.opacity=Math.min(1,d/60);
-      ind.querySelector('span').style.transform=`rotate(${d*4}deg) scale(${.6+Math.min(d,70)/175})`;
-      ind.querySelector('small').textContent=d>=70?'Solte para atualizar 🌱':'Puxe para atualizar';
-      const degrau=Math.floor(Math.min(d,70)/10);
+      ind.querySelector('span').style.transform=`rotate(${d*4}deg) scale(${.6+Math.min(d,90)/225})`;
+      ind.querySelector('small').textContent=d>=90?'Solte para atualizar 🌱':'Puxe mais um pouquinho…';
+      const degrau=Math.floor(Math.min(d,90)/13);
       if(degrau!==+(ind.dataset.d||0)){if(degrau>+(ind.dataset.d||0)){tom(320+degrau*90,.045);vibrar(5)}ind.dataset.d=degrau}
-      if(d>=70&&!ind.dataset.v){ind.dataset.v=1;vibrar(15);tom(1100,.09)}
+      if(d>=90&&!ind.dataset.v){ind.dataset.v=1;vibrar(15);tom(1100,.09)}
     }
   };
   const fim=async()=>{
     if(y0===null)return;y0=null;mouse=false;delete ind.dataset.v;delete ind.dataset.d;ind.style.transition='';
-    if(Math.min(dist,90)>=70){
+    if(Math.min(dist,110)>=90){
       carregando=true;ind.style.height='64px';ind.classList.add('girando');ind.querySelector('small').textContent='Atualizando…';
       await Promise.all([carregarPosts(),new Promise(r=>setTimeout(r,700))]);
       ind.classList.remove('girando');ind.querySelector('small').textContent='Pronto! 💚';som('ok');
@@ -2012,11 +2096,11 @@ function digitar(el,html,vel){
   let i=0;el.innerHTML='<span class="cursor"></span>';
   digitando=setInterval(()=>{
     if(html[i]==='<'){i=html.indexOf('>',i)+1}
-    else{const cp=html.codePointAt(i);i+=cp>0xffff?2:1}
+    else{for(let k=0;k<2&&i<html.length&&html[i]!=='<';k++){const cp=html.codePointAt(i);i+=cp>0xffff?2:1}}
     el.innerHTML=html.slice(0,i)+'<span class="cursor"></span>';
-    if(i%3===0)tom(900+Math.random()*200,.015);
+    if(i%6===0)tom(900+Math.random()*200,.012);
     if(i>=html.length){clearInterval(digitando);digitando=null;el.innerHTML=html+'<span class="cursor fim"></span>'}
-  },vel||32);
+  },vel||16);
 }
 function terminarDigitacao(){if(digitando){clearInterval(digitando);digitando=null;document.getElementById('bvTexto').innerHTML=BV[bvPasso].txt+'<span class="cursor fim"></span>';return true}return false}
 function resetBoasVindas(){
